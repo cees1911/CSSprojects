@@ -6,6 +6,10 @@
   border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .5);
   transition: transform .2s;
+
+  @include respond(tab_por){
+    padding: 2rem;
+  }
   
 
   &__icon {
@@ -18,7 +22,12 @@
     );
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;    
+    color: transparent;  
+    
+    @include respond(tab_por){
+      margin-bottom: 0;
+    }
+    
   }
 
   &:hover{
