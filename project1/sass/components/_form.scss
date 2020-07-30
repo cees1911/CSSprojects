@@ -10,6 +10,10 @@
     width: 90%;
     display: block;
 
+    @include respond(tab-por) {
+      width: 100%;
+  }
+
     &:focus {
       outline: none;
       box-shadow: $shadow-black-light;
@@ -43,6 +47,11 @@
   &__radio-group {
     width: 49%;
     display: inline-block;
+
+    @include respond(tab-por) {
+      width: 100%;
+      margin-bottom: 2rem;
+  }
   }
 
   &__radio-input{
